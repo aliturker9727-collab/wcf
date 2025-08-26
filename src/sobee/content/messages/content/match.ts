@@ -377,9 +377,12 @@ export namespace Match {
   export namespace State {
 
     export enum Type {
+      Waiting,
       Positioning,
       Freekick,
       Running,
+      Paused,
+      Finished,
     }
 
   }
