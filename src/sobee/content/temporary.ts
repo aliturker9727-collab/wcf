@@ -16,7 +16,7 @@ export namespace Temporary {
     export function Information() {
       return Messages.Match.Information.Default({
         Scenario: Messages.Scenario.Type.ScenarioMatch,
-        State: Messages.Match.State.Type.Positioning,
+        State: Messages.Match.State.Type.Waiting,
         Positioning: Types.Enums.Positioning.Kickoff,
         Teams: {
           Home: { Color: 5, Name: { Full: 'Gecici Takim 1', Short: 'G1' }, Size: 11 },

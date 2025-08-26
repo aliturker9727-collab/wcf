@@ -499,6 +499,9 @@ export namespace Socket {
       }
 
       public Broadcast(Message: Messaging.Event.Base): boolean {
+        if (this.Socket.destroyed) {
+          return false;
+        }
         return this.Socket.write(Message.Serialize())
       }
 
